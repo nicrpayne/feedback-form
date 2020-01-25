@@ -2,30 +2,42 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
 import { connect } from 'react-redux';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 import Header from '../Header/Header'
 import PageOne from '../PageOne/PageOne'
+import PageTwo from '../PageTwo/PageTwo'
+import PageThree from '../PageThree/PageThree'
+import PageFour from '../PageFour/PageFour'
+import PageFive from '../PageFive/PageFive'
+import ReviewFeedback from '../ReviewFeedback/ReviewFeedback'
+import ThankYou from '../ThankYou/ThankYou'
+import Home from '../Home/Home'
 
 class App extends Component {
   render() {
     return (
       <Router>
       <div className="App">
-          <ul>
-            <li>
-              <Link to="/">PageOne</Link>
-            </li>
-            
-          </ul>
+          
 
-        <header className="App-header">
+        {/* <header className="App-header">
           <h1 className="App-title">Feedback!</h1>
           <h4><i>Don't forget it!</i></h4>
-        </header>
-        <Route path="/pageone" component={PageOne}/>
+        </header> */}
         <Header />
-        <PageOne />
+        <Route exact path="/" component={Home} />
+        <Route path="/pageone" component={PageOne}/>
+        <Route path="/pagetwo" component={PageTwo}/>
+        <Route path="/pagethree" component={PageThree} />
+        <Route path="/pagefour" component={PageFour} />
+        <Route path="/pagefive" component={PageFive} />
+        <Route path="/feedback" component={ReviewFeedback} />
+        <Route path="/thankyou" component={ThankYou} />
+        <Route path="/home" component={Home} />
+        
+       
+
         
         <br/>
       </div>

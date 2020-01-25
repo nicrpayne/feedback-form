@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 
 
-class PageFour extends Component {
+class Home extends Component {
 
     handleClick = () => {
-        alert("You are headed to page 5");
+        alert("You are headed to page 1");
         ///CHANGE LOCATION???
-        this.props.history.push('/PageFive')
+        this.props.history.push('/PageOne')
     }
 
 
@@ -16,11 +16,11 @@ class PageFour extends Component {
 
             <>
                 <header >
+                    
                 </header>
                 <button onClick={this.handleClick}>Next</button>
             </>
         )
     }
 }
-
-export default PageFour
+export default Home

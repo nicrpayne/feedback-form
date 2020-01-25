@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 
 
-class PageFour extends Component {
+class ReviewFeedback extends Component {
 
     handleClick = () => {
-        alert("You are headed to page 5");
+        //alert("THANK YOU for your Feedback");
         ///CHANGE LOCATION???
-        this.props.history.push('/PageFive')
+        this.props.history.push('/ThankYou')
     }
 
 
@@ -23,4 +23,4 @@ class PageFour extends Component {
     }
 }
 
-export default PageFour
+export default ReviewFeedback

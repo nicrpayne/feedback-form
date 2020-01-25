@@ -8,13 +8,13 @@ import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux';
 
-// const pizzaSetter = (state = [], action) => {
-//     if (action.type === 'SET_PIZZA') {
-//         //whatever is returned will be saved in redux
-//         return action.payload
-//     }
-//     return state;
-// }
+const firstReducer = (state = [], action) => {
+    // if (action.type === 'SET_PIZZA') {
+    //     //whatever is returned will be saved in redux
+    //     return action.payload
+    // }
+    return state;
+}
 
 // const deliveryType = (state = '', action) => {
 //     if (action.type === 'DELIVERYTYPE') {
@@ -44,7 +44,7 @@ import { Provider } from 'react-redux';
 
 const storeInstance = createStore(
     combineReducers({
-        
+        firstReducer
     }),
     applyMiddleware(logger),
 )
