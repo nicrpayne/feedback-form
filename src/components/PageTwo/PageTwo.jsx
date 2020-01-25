@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 class PageTwo extends Component {
 
     handleClick = () => {
-        alert("You are headed to page 3");
+        // alert("You are headed to page 3");
         ///CHANGE LOCATION???
         this.props.history.push('/PageThree')
     }

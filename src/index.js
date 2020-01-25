@@ -9,10 +9,13 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux';
 
 const firstReducer = (state = [], action) => {
-    // if (action.type === 'SET_PIZZA') {
-    //     //whatever is returned will be saved in redux
-    //     return action.payload
-    // }
+    console.log(action.payload);
+    if (action.type === 'PAGE-ENTRY') {
+        //whatever is returned will be saved in redux
+        return action.payload
+        
+        
+    }
     return state;
 }
 

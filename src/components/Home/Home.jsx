@@ -18,6 +18,7 @@ class Home extends Component {
                 <header >
                     
                 </header>
+                <input> </input>
                 <button onClick={this.handleClick}>Next</button>
             </>
         )

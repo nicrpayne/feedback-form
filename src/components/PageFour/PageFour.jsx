@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 class PageFour extends Component {
 
     handleClick = () => {
-        alert("You are headed to page 5");
+        // alert("You are headed to page 5");
         ///CHANGE LOCATION???
         this.props.history.push('/PageFive')
     }
