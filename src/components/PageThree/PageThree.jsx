@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 
 
@@ -8,6 +9,10 @@ class PageThree extends Component {
         // alert("You are headed to page 4");
         ///CHANGE LOCATION???
         this.props.history.push('/PageFour')
+        this.props.dispatch({
+            type: 'SUPPORTED-ENTRY',
+            payload: this.state.feels
+        })
     }
 
 
@@ -23,4 +28,10 @@ class PageThree extends Component {
     }
 }
 
-export default PageThree
+const putReduxStateOnProps = (reduxState) => {
+    return {
+        reduxState
+    }
+}
+
+export default connect(putReduxStateOnProps)(PageThree);

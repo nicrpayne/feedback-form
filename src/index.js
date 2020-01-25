@@ -8,14 +8,35 @@ import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux';
 
-const firstReducer = (state = [], action) => {
+const feedback = (state = {}, action) => {
     console.log(action.payload);
-    if (action.type === 'PAGE-ENTRY') {
+    if (action.type === 'FEELING-ENTRY') {
         //whatever is returned will be saved in redux
-        return action.payload
-        
-        
+        return {...state,
+                feeling: action.payload}   
     }
+    if (action.type === 'UNDERSTANDING-ENTRY') {
+        //whatever is returned will be saved in redux
+        return {
+            ...state,
+            understanding: action.payload
+        }
+    }
+    if (action.type === 'SUPPORTED-ENTRY') {
+        //whatever is returned will be saved in redux
+        return {
+            ...state,
+            understanding: action.payload
+        }
+    }
+    if (action.type === 'COMMENTS-ENTRY') {
+        //whatever is returned will be saved in redux
+        return {
+            ...state,
+            understanding: action.payload
+        }
+    }
+    
     return state;
 }
 
@@ -47,7 +68,7 @@ const firstReducer = (state = [], action) => {
 
 const storeInstance = createStore(
     combineReducers({
-        firstReducer
+        feedback
     }),
     applyMiddleware(logger),
 )

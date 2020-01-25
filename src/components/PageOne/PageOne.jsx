@@ -10,7 +10,7 @@ class PageOne extends Component {
         ///CHANGE LOCATION???
         this.props.history.push('/PageTwo')
         this.props.dispatch({
-            type: 'PAGE-ENTRY',
+            type: 'FEELING-ENTRY',
             payload: this.state.feels
         })
     } 

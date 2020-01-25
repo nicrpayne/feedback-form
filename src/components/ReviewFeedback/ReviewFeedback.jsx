@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 
 
@@ -23,4 +24,10 @@ class ReviewFeedback extends Component {
     }
 }
 
-export default ReviewFeedback
+const putReduxStateOnProps = (reduxState) => {
+    return {
+        reduxState
+    }
+}
+
+export default connect(putReduxStateOnProps)(ReviewFeedback);

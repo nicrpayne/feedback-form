@@ -9,7 +9,6 @@ import PageOne from '../PageOne/PageOne'
 import PageTwo from '../PageTwo/PageTwo'
 import PageThree from '../PageThree/PageThree'
 import PageFour from '../PageFour/PageFour'
-import PageFive from '../PageFive/PageFive'
 import ReviewFeedback from '../ReviewFeedback/ReviewFeedback'
 import ThankYou from '../ThankYou/ThankYou'
 import Home from '../Home/Home'
@@ -31,7 +30,6 @@ class App extends Component {
         <Route path="/pagetwo" component={PageTwo}/>
         <Route path="/pagethree" component={PageThree} />
         <Route path="/pagefour" component={PageFour} />
-        <Route path="/pagefive" component={PageFive} />
         <Route path="/feedback" component={ReviewFeedback} />
         <Route path="/thankyou" component={ThankYou} />
         <Route path="/home" component={Home} />

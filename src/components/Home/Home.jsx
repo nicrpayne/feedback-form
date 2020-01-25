@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 
 
+
 class Home extends Component {
 
     handleClick = () => {
@@ -18,10 +19,13 @@ class Home extends Component {
                 <header >
                     
                 </header>
-                <input> </input>
+                
                 <button onClick={this.handleClick}>Next</button>
             </>
         )
     }
 }
-export default Home
+
+
+
+export default Home;
