@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './App.css';
 import { connect } from 'react-redux';
 import { HashRouter as Router, Route } from 'react-router-dom';
@@ -30,12 +30,9 @@ class App extends Component {
         <Route path="/pagetwo" component={PageTwo}/>
         <Route path="/pagethree" component={PageThree} />
         <Route path="/pagefour" component={PageFour} />
-        <Route path="/feedback" component={ReviewFeedback} />
+        <Route path="/ReviewFeedback" component={ReviewFeedback} />
         <Route path="/thankyou" component={ThankYou} />
         <Route path="/home" component={Home} />
-        
-       
-
         
         <br/>
       </div>

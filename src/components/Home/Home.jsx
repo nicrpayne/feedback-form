@@ -6,7 +6,7 @@ import React, { Component } from 'react';
 class Home extends Component {
 
     handleClick = () => {
-        alert("You are headed to page 1");
+        //alert("You are headed to page 1");
         ///CHANGE LOCATION???
         this.props.history.push('/PageOne')
     }
@@ -14,12 +14,9 @@ class Home extends Component {
 
     render() {
         return (
-
             <>
-                <header >
-                    
+                <header >  
                 </header>
-                
                 <button onClick={this.handleClick}>Next</button>
             </>
         )

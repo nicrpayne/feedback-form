@@ -17,26 +17,22 @@ const feedback = (state = {}, action) => {
     }
     if (action.type === 'UNDERSTANDING-ENTRY') {
         //whatever is returned will be saved in redux
-        return {
-            ...state,
+        return {...state,
             understanding: action.payload
         }
     }
     if (action.type === 'SUPPORTED-ENTRY') {
         //whatever is returned will be saved in redux
-        return {
-            ...state,
-            understanding: action.payload
+        return {...state,
+            supported: action.payload
         }
     }
     if (action.type === 'COMMENTS-ENTRY') {
         //whatever is returned will be saved in redux
-        return {
-            ...state,
-            understanding: action.payload
+        return {...state,
+            comments: action.payload
         }
     }
-    
     return state;
 }
 
