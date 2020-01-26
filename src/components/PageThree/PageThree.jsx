@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import FooterPageThree from '../FooterPageThree/FooterPageThree'
 
 
 
@@ -25,7 +26,7 @@ class PageThree extends Component {
     }
     handleChange = (event) => {
         this.setState({
-            feels: event.target.value
+            supported: event.target.value
         })
 
     }
@@ -34,6 +35,7 @@ class PageThree extends Component {
         return (
 
             <>
+            <form>
                 <header >
                     <h1>How well are you being supported?</h1>
                 </header>
@@ -44,7 +46,10 @@ class PageThree extends Component {
                     />
                 </div>
                 <button onClick={this.handleClick}>Next</button>
+                <FooterPageThree />
+            </form>
             </>
+           
         )
     }
 }

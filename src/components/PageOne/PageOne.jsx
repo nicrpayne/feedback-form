@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Footer from '../Footer/Footer'
 
 
 
@@ -36,6 +37,7 @@ state = {
         return (
         
             <>
+            <form>
             <header >
                 <h1>How are you feeling today?</h1>
             </header>
@@ -46,7 +48,10 @@ state = {
                 />
             </div>
             <button onClick={this.handleClick}>Next</button>
+                <Footer />
+            </form>
             </>
+            
         )
     }
 }

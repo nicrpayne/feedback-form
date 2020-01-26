@@ -16,8 +16,9 @@ class Home extends Component {
         return (
             <>
                 <header >  
+                    <h1>Let's get started!</h1>
                 </header>
-                <button onClick={this.handleClick}>Next</button>
+                <button onClick={this.handleClick}>START</button>
             </>
         )
     }

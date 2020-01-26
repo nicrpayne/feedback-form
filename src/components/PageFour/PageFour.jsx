@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import FooterPageFour from '../FooterPageFour/FooterPageFour'
 
 
 
@@ -25,6 +26,7 @@ class PageFour extends Component {
 
     }
     handleChange = (event) => {
+        //event.preventdefault();
         this.setState({
             comments: event.target.value
         })
@@ -34,7 +36,8 @@ class PageFour extends Component {
     render() {
         return (
 
-            <>
+           <>
+           
                 <header >
                     <h1>Any comments you want to leave?</h1>
                 </header>
@@ -55,6 +58,8 @@ class PageFour extends Component {
 
                 </form>
                 <button onClick={this.handleClick}>Next</button>
+                <FooterPageFour />
+
             </>
         )
     }

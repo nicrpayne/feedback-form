@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import FooterPageOne from '../FooterPageOne/FooterPageOne'
 
 
 class PageTwo extends Component {
 
     handleClick = () => {
+        
         // alert("You are headed to page 2");
         ///CHANGE LOCATION???
         let field = this.state.understanding;
@@ -17,6 +19,7 @@ class PageTwo extends Component {
             type: 'UNDERSTANDING-ENTRY',
             payload: this.state.understanding
         })}
+       
     } 
 
     state = {
@@ -34,6 +37,7 @@ class PageTwo extends Component {
     render() {
         return (
             <>
+            <form>
                 <header >
                     <h1>How well are you understanding the content?</h1>
                 </header>
@@ -44,7 +48,11 @@ class PageTwo extends Component {
                     />
                 </div>
                 <button onClick={this.handleClick}>Next</button>
-            </>
+                
+            </form>
+          
+                <FooterPageOne /> 
+          </>
         )
     }
 }
