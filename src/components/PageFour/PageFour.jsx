@@ -3,16 +3,22 @@ import { connect } from 'react-redux';
 
 
 
+
 class PageFour extends Component {
 
     handleClick = () => {
         // alert("You are headed to page 5");
         ///CHANGE LOCATION???
+        let field = this.state.feels;
+        //Name
+        if (field === "") {
+           alert("Please add your thoughts to move ahead")
+        } else {
         this.props.history.push('/ReviewFeedback')
         this.props.dispatch({
             type: 'COMMENTS-ENTRY',
             payload: this.state.feels
-        })
+        })}
     }
     state = {
         feels: ''

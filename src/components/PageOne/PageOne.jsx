@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 
 
+
 class PageOne extends Component {
 
     handleClick = () => {
@@ -52,3 +53,6 @@ const putReduxStateOnProps = (reduxState) => {
 }
 
 export default connect(putReduxStateOnProps)(PageOne);
+
+
+
