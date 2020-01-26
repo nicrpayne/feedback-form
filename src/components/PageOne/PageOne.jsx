@@ -9,11 +9,16 @@ class PageOne extends Component {
     handleClick = () => {
         // alert("You are headed to page 2");
         ///CHANGE LOCATION???
+        let field = this.state.feels;
+        //Name
+        if (field === "") {
+            alert("Please pick a number 1-5 to move ahead")
+        } else {
         this.props.history.push('/PageTwo')
         this.props.dispatch({
             type: 'FEELING-ENTRY',
             payload: this.state.feels
-        })
+        })}
     } 
 
 state = {

@@ -9,7 +9,7 @@ class PageFour extends Component {
     handleClick = () => {
         // alert("You are headed to page 5");
         ///CHANGE LOCATION???
-        let field = this.state.feels;
+        let field = this.state.comments;
         //Name
         if (field === "") {
            alert("Please add your thoughts to move ahead")
@@ -17,16 +17,16 @@ class PageFour extends Component {
         this.props.history.push('/ReviewFeedback')
         this.props.dispatch({
             type: 'COMMENTS-ENTRY',
-            payload: this.state.feels
+            payload: this.state.comments
         })}
     }
     state = {
-        feels: ''
+        comments: ''
 
     }
     handleChange = (event) => {
         this.setState({
-            feels: event.target.value
+            comments: event.target.value
         })
 
     }
@@ -47,7 +47,7 @@ class PageFour extends Component {
                 <form action="/html/tags/html_form_tag_action.cfm" method="post">
                     <div>
                         <textarea placeholder="Hey... say something!"
-                        value={this.state.feels}
+                        value={this.state.comments}
                         onChange={(event) => this.handleChange(event)}> 
                             
                         </textarea>

@@ -8,14 +8,19 @@ class PageThree extends Component {
     handleClick = () => {
         // alert("You are headed to page 4");
         ///CHANGE LOCATION???
+        let field = this.state.supported;
+        //Name
+        if (field === "") {
+            alert("Please pick a number 1-5 to move ahead")
+        } else {
         this.props.history.push('/PageFour')
         this.props.dispatch({
             type: 'SUPPORTED-ENTRY',
-            payload: this.state.feels
-        })
+            payload: this.state.supported
+        })}
     }
     state = {
-        feels: ''
+        supported: ''
 
     }
     handleChange = (event) => {
@@ -34,7 +39,7 @@ class PageThree extends Component {
                 </header>
                 <div>
                     <input required placeholder="Rate 1-5"
-                        value={this.state.feels}
+                        value={this.state.supported}
                         onChange={(event) => this.handleChange(event)}
                     />
                 </div>
