@@ -34,9 +34,9 @@ export default function StickyFooter() {
                 <CssBaseline />
                 <Container component="main" className={classes.main} maxWidth="sm">
                     <Typography variant="h2" component="h1" gutterBottom>
-                        truthy
+                        truthy. . .
         </Typography>
-                    <Typography variant="h5" component="h2" gutterBottom>
+                    <Typography variant="h5" component="h2" gutterBottom >
                         {'“Journaling is like whispering to one’s self and listening at the same time.”'}
 
                     </Typography>

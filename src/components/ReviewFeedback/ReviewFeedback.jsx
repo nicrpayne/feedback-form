@@ -15,7 +15,7 @@ class ReviewFeedback extends Component {
 
     handleSubmit = (event) => {
         // event.preventDefault();
-        console.log(`Adding Review Data`, this.props.reduxState);
+        //console.log(`Adding Review Data`, this.props.reduxState);
 
         let newReview = this.props.reduxState.feedback
         // TODO - axios request to server to add review

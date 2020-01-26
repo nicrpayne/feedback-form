@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FooterPageFour from '../FooterPageFour/FooterPageFour'
+import Typography from '@material-ui/core/Typography';
 
 
 
@@ -38,17 +39,24 @@ class PageFour extends Component {
 
            <>
            
+                <body className="pagefourheader">
                 <header >
-                    <h1>Any comments you want to leave?</h1>
+                   
+                    <Typography variant="h5" component="h2" gutterBottom >
+                    <h1 style={{ color: 'white' }}>Any comments you want to leave?</h1>
+                        </Typography>
+                   
                 </header>
+
                 {/* <div>
                     <input required placeholder="Rate 1-5"
                         value={this.state.feels}
                         onChange={(event) => this.handleChange(event)}
                     />
                 </div> */}
-                <form action="/html/tags/html_form_tag_action.cfm" method="post">
-                    <div>
+                
+                <form  >
+                        <div className="field">
                         <textarea placeholder="Hey... say something!"
                         value={this.state.comments}
                         onChange={(event) => this.handleChange(event)}> 
@@ -57,9 +65,10 @@ class PageFour extends Component {
                     </div>
 
                 </form>
+                
                 <button onClick={this.handleClick}>Next</button>
                 <FooterPageFour />
-
+                </body>
             </>
         )
     }
