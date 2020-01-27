@@ -45,7 +45,7 @@ class PageThree extends Component {
                         onChange={(event) => this.handleChange(event)}
                     />
                 </div>
-                <button onClick={this.handleClick}>Next</button>
+                    <button className="button" onClick={this.handleClick}>Next</button>
                 <FooterPageThree />
             </form>
             </>

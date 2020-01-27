@@ -19,7 +19,7 @@ class ThankYou extends Component {
                 <header >
                     <h1>THANK YOU</h1>
                 </header>
-                <button onClick={this.handleClick}>Home</button>
+                <button className="button" onClick={this.handleClick}>Home</button>
             </>
         )
     }

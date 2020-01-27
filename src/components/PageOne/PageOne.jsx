@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Footer from '../Footer/Footer'
+import '../App/App.css'
 
 
 
@@ -47,7 +48,7 @@ state = {
                     onChange={(event) => this.handleChange(event)}
                 />
             </div>
-            <button onClick={this.handleClick}>Next</button>
+            <button className="button" onClick={this.handleClick}>Next</button>
                 <Footer />
             </form>
             </>
