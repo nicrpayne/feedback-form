@@ -38,6 +38,7 @@ class ReviewFeedback extends Component {
                     <p>Support: {this.props.reduxState.feedback.supported}</p>
                     <p>Comments: {this.props.reduxState.feedback.comments}</p>
                 </header>
+                <br></br>
                 <button className="button" onClick={this.handleClick}>Submit!</button>
             </>
         )

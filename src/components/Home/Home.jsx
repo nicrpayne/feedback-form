@@ -18,6 +18,7 @@ class Home extends Component {
                 <header >  
                     <h1>Let's get started!</h1>
                 </header>
+                <br></br>
                 <button className="button" onClick={this.handleClick}>START</button>
             </>
         )

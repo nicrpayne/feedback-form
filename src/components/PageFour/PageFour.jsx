@@ -65,7 +65,7 @@ class PageFour extends Component {
                     </div>
 
                 </form>
-                
+                    <br></br>
                     <button className="button" onClick={this.handleClick}>Next</button>
                 <FooterPageFour />
                 </body>

@@ -48,6 +48,7 @@ state = {
                     onChange={(event) => this.handleChange(event)}
                 />
             </div>
+            <br></br>
             <button className="button" onClick={this.handleClick}>Next</button>
                 <Footer />
             </form>

@@ -1,9 +1,14 @@
-# Project Name
+# Review Feedback 
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This project addresses a need for a meaningful way for people to provide honest, simple, feedback on an experience.
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/github-finalization-assignment).
+On the home page, click 'next' and follow the prompts to complete the assessment. It should take about 2 minutes.
+
+**Make sure to complete every field except for the comments page. This are required but you'll be able to review them at the end of the review.
+
+Thank you!
+
+
